@@ -165,11 +165,9 @@ Setting up the Web-pack for the future Projects
   + import './style.css';
   ```
 
-- Implement the changes into the didtribution dir: Run `npm run build`  
-
-
-
-
-
-
+- Implement the changes into the didtribution dir: Run `npm run build`
   
+### Setup local dev server:
+
+- Install Web-pack-dev-server in your local system: Run `npm install --save-dev webpack-dev-server`
+- 
