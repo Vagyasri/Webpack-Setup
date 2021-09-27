@@ -93,3 +93,25 @@ Setting up the Web-pack for the future Projects
     + "test": "echo \"Error: no test specified\" && exit 1",
     + "build": "webpack"
     ```
+- Check if your script alias works: Run `npm run build`
+
+### Setting up HtmlWebpackPlugin:
+  HtmlWebpackPlugin automatically create the index.html file in the /dist directory inorder to avoid the risk of overwritting in the manual creation.
+
+- Install the plugin: Run `npm install --save-dev html-webpack-plugin`
+- Adjust the `webpack.config.js` file:
+
+    ```diff
+    const path = require('path');
+    + const HtmlWebpackPlugin = require('html-webpack-plugin');
+    module.exports = {
+        entry: {
+            index: './src/index.js',
+            print: './src/print.js',
+        },
+    +   plugins: [
+            new HtmlWebpackPlugin({
+                title: 'Output Management',
+            }),
+        ],
+        ```
