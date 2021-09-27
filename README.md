@@ -65,7 +65,7 @@ Setting up the Web-pack for the future Projects
 
 - Update `index.html`:
   
-  ```js
+  ```html
    - <script src="https://unpkg.com/lodash@4.17.20"></script>
     </head>
     <body>
@@ -73,4 +73,5 @@ Setting up the Web-pack for the future Projects
    + <script src="main.js"></script>
   ```
 
--     
+- For taking our script at `src/index.js` as the entry point, and will generate `dist/main.js` as the output: Run `npx webpack`
+
