@@ -88,8 +88,8 @@ Setting up the Web-pack for the future Projects
 - Adjust package.json by adding an npm script:
   
   ```diff
-  "scripts": {
-   - "test": "echo \"Error: no test specified\" && exit 1"
-   + "test": "echo \"Error: no test specified\" && exit 1",
-   + "build": "webpack"
+        "scripts": {
+    -     "test": "echo \"Error: no test specified\" && exit 1"
+    +     "test": "echo \"Error: no test specified\" && exit 1",
+    +     "build": "webpack"
    ```
