@@ -45,7 +45,7 @@ Setting up the Web-pack for the future Projects
     ```
 
 - Run `mkdir dist && mv index.html dist`
-- Move `dist` out of `gitignore`
+- Move `dist` out of `gitignore`:
   
   ```diff
   # Nuxt.js build / generate output
@@ -54,5 +54,12 @@ Setting up the Web-pack for the future Projects
   ```
 
 - To bundle the lodash dependency with index.js, install the library locally: Run `npm install --save lodash`
-- 
-
+- Import lodash in our script(index.js):
+  
+  ```diff
+    + import _ from 'lodash';
+      ......
+    - // Lodash, currently included via a script, is required for this line to work
+    + // Lodash, now imported by this script
+  ```
+-   
