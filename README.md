@@ -170,4 +170,24 @@ Setting up the Web-pack for the future Projects
 ### Setup local dev server:
 
 - Install Web-pack-dev-server in your local system: Run `npm install --save-dev webpack-dev-server`
-- 
+- Change your configuration file to tell the dev server where to look for files:
+
+    ```diff
+    +    mode: 'development',
+        entry: './src/index.js',
+    +    devServer: {
+    +        static: './dist',
+    +    },
+        plugins: [
+            new HtmlWebpackPlugin({
+            template: './src/index.html',
+            }),
+        ],
+        output: {
+            filename: 'main.js',
+            path: path.resolve(__dirname, 'dist'),
+        },
+        module: {
+    ```
+
+- Add a script to `package.json` in order to run the dev server easily: 
