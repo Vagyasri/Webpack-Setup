@@ -114,4 +114,8 @@ Setting up the Web-pack for the future Projects
     +           title: 'Output Management',
     +       }),
     +   ],
-        ```
+    ```
+
+- Check if your script alias works: Delete all the files from the `/dist directory` and Run:
+`npm run build`
+  
