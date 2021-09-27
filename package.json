@@ -1,0 +1,20 @@
+{
+  "name": "webpack-setup",
+  "version": "1.0.0",
+  "description": "Setting up the Web-pack for the future Projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vagyasri/Webpack-Setup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vagyasri/Webpack-Setup/issues"
+  },
+  "homepage": "https://github.com/Vagyasri/Webpack-Setup#readme"
+}
