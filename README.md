@@ -1,7 +1,9 @@
 # Webpack-Setup
 Setting up the Web-pack for the future Projects
 
-Steps:
+- The "source" code is the code that we'll write and edit. The "distribution" code is the minimized and optimized output of our build process that will eventually be loaded in the browser.
+
+### Steps:
 
 - Initialize `npm`: Run `npm init -y`
 - Install `webpack` and  `webpack-cli` locally: Run `npm install webpack webpack-cli --save-dev`
@@ -42,4 +44,12 @@ Steps:
     + "private": true,
     ```
 
-- 
+- Run `mkdir dist && mv index.html dist`
+- Move `dist` out of `gitignore`
+  
+  ```diff
+  # Nuxt.js build / generate output
+    .nuxt
+  - dist
+  ```
+-   
