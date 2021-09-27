@@ -39,6 +39,7 @@ Steps:
 
     ```diff
     - "main": "index.js",
-    + "private": true,```
+    + "private": true,
+    ```
 
 - 
