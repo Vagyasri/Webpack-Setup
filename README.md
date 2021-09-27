@@ -158,7 +158,16 @@ Setting up the Web-pack for the future Projects
     + },
     ```
 
-    
+- Create CSS file in the Source dir: Run `cd src && touch style.css && cd ..`
+- Import `style.css` into the `index.js`:
+  
+  ```diff
+  + import './style.css';
+  ```
+
+- Implement the changes into the didtribution dir: Run `npm run build`  
+
+
 
 
 
