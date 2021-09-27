@@ -122,5 +122,16 @@ Setting up the Web-pack for the future Projects
 ### HTML template:
 
 - Run `cd src && touch index.html && cd ..`
-- 
+- Modify `webpack.config.js` to point HtmlWebpackPlugin towards the template file:
+  
+  ```diff
+    plugins: [
+    new HtmlWebpackPlugin({
+  -   title: 'Output Management',
+  +   template: './src/index.html',
+    }),
+    ],
+  ```
+
+
   
