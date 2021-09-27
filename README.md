@@ -68,7 +68,7 @@ Setting up the Web-pack for the future Projects
 
 - Update `index.html`:
   
-  ```html
+  ```diff
   - <script src="https://unpkg.com/lodash@4.17.20"></script>
     </head>
     <body>
