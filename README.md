@@ -3,7 +3,9 @@ Setting up the Web-pack for the future Projects
 
 - The "source" code is the code that we'll write and edit. The "distribution" code is the minimized and optimized output of our build process that will eventually be loaded in the browser.
 
-### Steps:
+## Steps:
+
+### Basic Setup:
 
 - Initialize `npm`: Run `npm init -y`
 - Install `webpack` and  `webpack-cli` locally: Run `npm install webpack webpack-cli --save-dev`
@@ -43,6 +45,7 @@ Setting up the Web-pack for the future Projects
     - "main": "index.js",
     + "private": true,
     ```
+### Creating a Bundle
 
 - Run `mkdir dist && mv index.html dist`
 - Move `dist` out of `gitignore`:
@@ -75,5 +78,18 @@ Setting up the Web-pack for the future Projects
 
 - For taking our script at `src/index.js` as the entry point, and will generate `dist/main.js` as the output: Run `npx webpack`
 
-- Create a configuration File `webpack.config.js`
-- 
+### Modules:
+
+- Create and update a configuration File `webpack.config.js`
+- Run the build again but instead using our new configuration file: Run `npx webpack --config webpack.config.js`
+
+### NPM Scripts:
+
+- Adjust package.json by adding an npm script:
+  
+  ```diff
+  "scripts": {
+   - "test": "echo \"Error: no test specified\" && exit 1"
+   + "test": "echo \"Error: no test specified\" && exit 1",
+   + "build": "webpack"
+   ```
