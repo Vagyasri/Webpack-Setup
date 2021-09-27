@@ -139,7 +139,26 @@ Setting up the Web-pack for the future Projects
 
 - Install: Run `npm install --save-dev style-loader css-loader`
 
-- 
+- Add:
+
+    ```diff
+        plugins: [
+        new HtmlWebpackPlugin({
+        template: './src/index.html',
+        }),
+    ],
+    
+    + module: {
+    +    rules: [
+    +    {
+    +        test: /\.css$/i,
+    +        use: ['style-loader', 'css-loader'],
+    +    },
+    +    ],
+    + },
+    ```
+
+    
 
 
 
