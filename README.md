@@ -110,8 +110,8 @@ Setting up the Web-pack for the future Projects
             print: './src/print.js',
         },
     +   plugins: [
-            new HtmlWebpackPlugin({
-                title: 'Output Management',
-            }),
-        ],
+    +       new HtmlWebpackPlugin({
+    +           title: 'Output Management',
+    +       }),
+    +   ],
         ```
