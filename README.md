@@ -7,6 +7,7 @@ Steps:
 - Install `webpack` and  `webpack-cli` locally: Run `npm install webpack webpack-cli --save-dev`
 - Run `touch index.html && mkdir src && cd src && touch index.js && cd ..`
 - Update `index.html`:
+
     ```html
     <!DOCTYPE html>
     <html>
@@ -19,7 +20,9 @@ Steps:
         <script src="./src/index.js"></script>
     </body>
     </html>```
+
 - Update `index.js`:
+
     ```js
     function component() {
         const element = document.createElement('div');
@@ -31,4 +34,11 @@ Steps:
     }
     
     document.body.appendChild(component());```
--     
+
+- Update package.json:
+
+    ```diff
+    - "main": "index.js",
+    + "private": true,```
+
+- 
