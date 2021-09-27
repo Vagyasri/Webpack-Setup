@@ -59,21 +59,21 @@ Setting up the Web-pack for the future Projects
 - To bundle the lodash dependency with index.js, install the library locally: Run `npm install --save lodash`
 - Import lodash in our script `index.js`:
   
-  ```js
-   + import _ from 'lodash';
+  ```diff
+  + import _ from 'lodash';
       ......
-   - // Lodash, currently included via a script, is required for this line to work
-   + // Lodash, now imported by this script
+  - // Lodash, currently included via a script, is required for this line to work
+  + // Lodash, now imported by this script
   ```
 
 - Update `index.html`:
   
   ```html
-   - <script src="https://unpkg.com/lodash@4.17.20"></script>
+  - <script src="https://unpkg.com/lodash@4.17.20"></script>
     </head>
     <body>
-   - <script src="./src/index.js"></script>
-   + <script src="main.js"></script>
+  - <script src="./src/index.js"></script>
+  + <script src="main.js"></script>
   ```
 
 - For taking our script at `src/index.js` as the entry point, and will generate `dist/main.js` as the output: Run `npx webpack`
@@ -85,7 +85,7 @@ Setting up the Web-pack for the future Projects
 
 ### NPM Scripts:
 
-- Adjust package.json by adding an npm script:
+- Adjust `package.json` by adding an npm script:
 
     ```diff
     "scripts": {
