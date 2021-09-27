@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Vagyasri/Webpack-Setup/issues"
   },
-  "homepage": "https://github.com/Vagyasri/Webpack-Setup#readme"
+  "homepage": "https://github.com/Vagyasri/Webpack-Setup#readme",
+  "devDependencies": {
+    "stylelint": "13.3.x",
+    "stylelint-config-standard": "20.0.x",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "3.17.x"
+  }
 }
