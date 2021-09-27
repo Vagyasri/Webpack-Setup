@@ -56,7 +56,7 @@ Setting up the Web-pack for the future Projects
 - To bundle the lodash dependency with index.js, install the library locally: Run `npm install --save lodash`
 - Import lodash in our script `index.js`:
   
-  ```diff
+  ```js
    + import _ from 'lodash';
       ......
    - // Lodash, currently included via a script, is required for this line to work
@@ -65,7 +65,7 @@ Setting up the Web-pack for the future Projects
 
 - Update `index.html`:
   
-  ```diff
+  ```js
    - <script src="https://unpkg.com/lodash@4.17.20"></script>
     </head>
     <body>
