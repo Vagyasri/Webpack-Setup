@@ -52,4 +52,7 @@ Setting up the Web-pack for the future Projects
     .nuxt
   - dist
   ```
--   
+
+- To bundle the lodash dependency with index.js, install the library locally: Run `npm install --save lodash`
+- 
+
