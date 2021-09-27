@@ -190,4 +190,12 @@ Setting up the Web-pack for the future Projects
         module: {
     ```
 
-- Add a script to `package.json` in order to run the dev server easily: 
+- Add a script to `package.json` in order to run the dev server easily:
+  
+  ```diff
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+  +     "start": "webpack serve --open",
+        "build": "webpack"
+  ```
+        
