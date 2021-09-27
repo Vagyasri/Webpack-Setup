@@ -75,3 +75,5 @@ Setting up the Web-pack for the future Projects
 
 - For taking our script at `src/index.js` as the entry point, and will generate `dist/main.js` as the output: Run `npx webpack`
 
+- Create a configuration File `webpack.config.js`
+- 
