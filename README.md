@@ -56,7 +56,8 @@ Setting up the Web-pack for the future Projects
     <body>
         <script src="./src/index.js"></script>
     </body>
-    </html>```
+    </html>
+    ```
 
 - Update `index.js`:
 
@@ -70,7 +71,8 @@ Setting up the Web-pack for the future Projects
         return element;
     }
     
-    document.body.appendChild(component());```
+    document.body.appendChild(component());
+    ```
 
 - Update package.json:
 
@@ -198,7 +200,7 @@ Setting up the Web-pack for the future Projects
   + import './style.css';
   ```
 
-- Implement the changes into the didtribution dir: Run `npm run build`
+- Implement the changes into the distribution dir: Run `npm run build`
   
 ### Setup local dev server:
 
